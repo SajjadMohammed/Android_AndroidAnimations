@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="ltr"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/support_toolbar"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        > <Button
+        android:text="Alpha Animation"
+        android:textAllCaps="false"
+        android:onClick="doAlpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        <Button
+            android:text="Rotate Animation"
+            android:textAllCaps="false"
+            android:onClick="rotateItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/></LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Scale down Animation"
+            android:textAllCaps="false"
+            android:onClick="scaleDownItem"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="Scale up Animation"
+            android:textAllCaps="false"
+            android:layout_width="100dp"
+            android:onClick="scaleUpItem"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="Scale right Animation"
+            android:textAllCaps="false"
+            android:layout_width="100dp"
+            android:onClick="scaleRightItem"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Scale left Animation"
+            android:textAllCaps="false"
+            android:layout_width="100dp"
+            android:onClick="scaleLeftItem"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="Translate from down Animation"
+            android:textAllCaps="false"
+            android:layout_width="100dp"
+            android:onClick="translateFromDown"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="Translate from up Animation"
+            android:textAllCaps="false"
+            android:onClick="translateFromUp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="Translate from right Animation"
+            android:textAllCaps="false"
+            android:layout_width="100dp"
+            android:onClick="translateFromRight"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="Translate from left Animation"
+            android:textAllCaps="false"
+            android:layout_width="100dp"
+            android:onClick="translateFromLeft"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:text="Translate from UpRight Animation"
+            android:textAllCaps="false"
+            android:layout_width="100dp"
+            android:onClick="translateFromUpRight"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <Button
+        android:text="Multi Animation"
+        android:textAllCaps="false"
+        android:layout_width="100dp"
+        android:onClick="multiAnimation"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/item"
+        android:text="Item"
+        android:layout_margin="20dp"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
